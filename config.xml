@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.yourCompany.yourApp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>My App</name>
+<widget id="com.myfastracpapps.ogpossgnew" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>OGPOSSGNEW</name>
     <description>
-        An Alpha Anywhere PhoneGap App
+        Singapore Mobile
     </description>
     <author email="" href="">
         PhoneGap Team
