@@ -17,12 +17,12 @@ background: #fafaff;
 }
 .A5SuggestionListEntrySelected, .A5SuggestionListEntrySelected .A5SuggestionListKey{
 color: #000;
-background: #b2b4bf url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAASCAIAAAAVNSPrAAAAKElEQVR42mM4e/46079//5j+///P9O/ff6b///9B6f9QMWQ5BB9NPQBtNjVOHWsgDwAAAABJRU5ErkJggg==') repeat-x top;
+background: #b2b4bf url('images/$box/$size/1x18/$fill/Gradient_Horizontal:%23205%2B207%2B215%3A%23178%2B180%2B191.png.a5image') repeat-x top;
 cursor: default;
 }
 .A5SuggestionListColumnTitle{
 text-align: center;
-background: #e0dfe3 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAASCAIAAAAVNSPrAAAAKUlEQVR42k3KsQkAMAzEwPD7L2wMUooE7O4EOlUdIGrE4LZRxrwe/x8vjvY1y0qcpVkAAAAASUVORK5CYII=') repeat-x top;
+background: #e0dfe3 url('images/$box/$size/1x18/$fill/Gradient_Horizontal:%23249%2B249%2B251%3A%23224%2B223%2B227.png.a5image') repeat-x top;
 }
 .A5SuggestionListColumnTitle td{
 border: none;
@@ -51,12 +51,12 @@ background: #fafaff;
 }
 .A5EditComboEntrySelected, .A5EditComboEntrySelected .A5EditComboKey{
 color: #000;
-background: #b2b4bf url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAASCAIAAAAVNSPrAAAAKElEQVR42mM4e/46079//5j+///P9O/ff6b///9B6f9QMWQ5BB9NPQBtNjVOHWsgDwAAAABJRU5ErkJggg==') repeat-x top;
+background: #b2b4bf url('images/$box/$size/1x18/$fill/Gradient_Horizontal:%23205%2B207%2B215%3A%23178%2B180%2B191.png.a5image') repeat-x top;
 cursor: default;
 }
 .A5EditComboColumnTitle{
 text-align: center;
-background: #e0dfe3 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAASCAIAAAAVNSPrAAAAKUlEQVR42k3KsQkAMAzEwPD7L2wMUooE7O4EOlUdIGrE4LZRxrwe/x8vjvY1y0qcpVkAAAAASUVORK5CYII=') repeat-x top;
+background: #e0dfe3 url('images/$box/$size/1x18/$fill/Gradient_Horizontal:%23249%2B249%2B251%3A%23224%2B223%2B227.png.a5image') repeat-x top;
 }
 .A5EditComboColumnTitle td{
 border: none;
@@ -101,7 +101,7 @@ text-decoration: underline;
 }
 .A5TreeSelected {
 color: #000;
-background: #b2b4bf url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAASCAIAAAAVNSPrAAAAKElEQVR42mM4e/46079//5j+///P9O/ff6b///9B6f9QMWQ5BB9NPQBtNjVOHWsgDwAAAABJRU5ErkJggg==') repeat-x top;
+background: #b2b4bf url('images/$box/$size/1x18/$fill/Gradient_Horizontal:%23205%2B207%2B215%3A%23178%2B180%2B191.png.a5image') repeat-x top;
 cursor: default;
 }
 .A5TreeSelected .A5TreeLabel {
@@ -118,7 +118,7 @@ color: #0e1010;
 border: 1px solid #9d9da1;
 -moz-border-radius: 4px;
 -webkit-border-radius: 4px;
-background: #c0c0c0 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAcCAIAAAAvP0KbAAAAKUlEQVR42o2JsQ0AMAyDKvz/T36MqHMzdQLEaQtAEpI8vns/FZWZ+eUFEw0phmwP6hkAAAAASUVORK5CYII=') repeat-x top;
+background: #c0c0c0 url('images/$box/$size/1x28/$fill/Gradient_Horizontal_Middle:%23192%2B192%2B192%3A%2BL15%23192%2B192%2B192.png.a5image') repeat-x top;
 }
 .A5WindowTitle{
 font: 10pt "Trebuchet MS", arial, sans-serif;
@@ -136,14 +136,14 @@ color: #000;
 padding: 2px 4px;
 margin: 0px 3px;
 border: 1px solid #9d9da1;
-background: #fff url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABLCAIAAAA+tHrUAAAAH0lEQVR42mN4+vQpEwMDAxMDAwMTIyPjoGEPJrdA2QCh/QOPWwOqyAAAAABJRU5ErkJggg==') repeat-x top;
+background: #fff url('images/$box/$size/1x75/$fill/Gradient_Horizontal:-L10White%3AWhite.png.a5image') repeat-x top;
 }
 .A5WindowFooter {
 color: #0e1010;
 border-bottom: 1px solid #fff;
 -moz-border-radius: 0px 0px 4px 4px;
 -webkit-border-radius: 0px 0px 4px 4px;
-background: #c0c0c0 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAIAAAAL5hHIAAAAEklEQVR42mM4cOAAEwsLCzIGACpkAnnkphkCAAAAAElFTkSuQmCC') repeat-x bottom;
+background: #c0c0c0 url('images/$box/$size/1x5/$fill/Gradient_Horizontal:%23192%2B192%2B192%3A%2BL10%23192%2B192%2B192.png.a5image') repeat-x bottom;
 padding: 1px 3px;
 text-align: center;
 }
@@ -164,7 +164,7 @@ These styles are used by the Tab
 */
 .A5TabTopPane {
 color: #000000;
-background: #f7f7f4 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAIAAAASmSbdAAAAL0lEQVR42mP4//8/0////5kYGBiQMIT//z+mGEIcXQ9EDFUPNrNQ9RFvFrr9KGIAf24eRdVHB2UAAAAASUVORK5CYII=') repeat-x top;
+background: #f7f7f4 url('images/$box/$size/1x50/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23247%2B247%2B244.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 border: 1px solid #919b9c;
 padding: 2px;
@@ -180,7 +180,7 @@ margin-bottom: 3px;
 margin-right: 1px;
 text-decoration: none;
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR42mP4f8KGiYGBAQAM5QIGe4TWIgAAAABJRU5ErkJggg==') repeat-x top;
+background: #fcfcfe url('images/$box/$size/1x2/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #919b9c;
@@ -199,7 +199,7 @@ margin-top: 2px;
 margin-right: 1px;
 text-decoration: none;
 color: #000000;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -209,7 +209,7 @@ cursor: default;
 }
 .A5TabTopOff:hover {
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR42mP4f8KGiYGBAQAM5QIGe4TWIgAAAABJRU5ErkJggg==') repeat-x top;
+background: #fcfcfe url('images/$box/$size/1x2/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-x top;
 border: 1px solid #919b9c;
 border-top-color: #e68b2c;
 border-bottom-color: #919b9c;
@@ -224,7 +224,7 @@ margin-top: 2px;
 margin-right: 1px;
 text-decoration: none;
 color: #888;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -235,7 +235,7 @@ cursor: default;
 
 .A5TabBottomPane {
 color: #000000;
-background: #f7f7f4 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAIAAAASmSbdAAAALklEQVR42mP4/v0LEwMDAxpmZGJgYGBiZMQUQ4gzYtWHqgebWaj6iDcL3X4UMQBqygNdjuoyswAAAABJRU5ErkJggg==') repeat-x bottom;
+background: #f7f7f4 url('images/$box/$size/1x50/$fill/Gradient_Horizontal:%23247%2B247%2B244%3A%23255%2B255%2B255.png.a5image') repeat-x bottom;
 font: 9pt tahoma, arial;
 border: 1px solid #919b9c;
 padding: 2px;
@@ -251,7 +251,7 @@ margin-top: 1px;
 margin-right: 1px;
 text-decoration: none;
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR42mP4f8KGiYGBAQAM5QIGe4TWIgAAAABJRU5ErkJggg==') repeat-x bottom;
+background: #fcfcfe url('images/$box/$size/1x2/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-x bottom;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #919b9c;
@@ -270,7 +270,7 @@ margin-bottom: 2px;
 margin-right: 1px;
 text-decoration: none;
 color: #000000;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -280,7 +280,7 @@ cursor: default;
 }
 .A5TabBottomOff:hover {
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAIAAAAW4yFwAAAAEElEQVR42mP4f8KGiYGBAQAM5QIGe4TWIgAAAABJRU5ErkJggg==') repeat-x bottom;
+background: #fcfcfe url('images/$box/$size/1x2/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-x bottom;
 border: 1px solid #919b9c;
 border-bottom-color: #e68b2c;
 border-top-color: #919b9c;
@@ -295,7 +295,7 @@ margin-bottom: 2px;
 margin-right: 1px;
 text-decoration: none;
 color: #888;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -306,7 +306,7 @@ cursor: default;
 
 .A5TabLeftPane {
 color: #000000;
-background: #f7f7f4 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAABCAIAAACnuZzqAAAAMklEQVR42oWOsQ0AMAjD4P+j3aUSDLFgJA6mAaB0fpSQtEKjQThcYkTOHTp5PrQWlgsPlOAd5F6uvK4AAAAASUVORK5CYII=') repeat-y left;
+background: #f7f7f4 url('images/$box/$size/100x1/$fill/Gradient_Vertical:%23255%2B255%2B255%3A%23247%2B247%2B244.png.a5image') repeat-y left;
 font: 9pt tahoma, arial;
 border: 1px solid #919b9c;
 padding: 2px;
@@ -319,7 +319,7 @@ padding: 2px 4px;
 margin-bottom: 1px;
 text-decoration: none;
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAIAAACUgoPjAAAAEklEQVR42mP8f8KGgYGBgYEBABDvAgWG6wFHAAAAAElFTkSuQmCC') repeat-y left;
+background: #fcfcfe url('images/$box/$size/3x1/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-y left;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #919b9c;
@@ -336,7 +336,7 @@ margin-right: -2px;
 margin-bottom: 1px;
 text-decoration: none;
 color: #000000;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -346,7 +346,7 @@ cursor: default;
 }
 .A5TabLeftOff:hover {
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAIAAAB7QOjdAAAAD0lEQVR42mP8f8KGgYEBAArgAgWJuthgAAAAAElFTkSuQmCC') repeat-y left;
+background: #fcfcfe url('images/$box/$size/2x1/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-y left;
 border: 1px solid #919b9c;
 border-left-color: #e68b2c;
 border-right-color: #919b9c;
@@ -359,7 +359,7 @@ margin-right: -2px;
 margin-bottom: 1px;
 text-decoration: none;
 color: #888;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -370,7 +370,7 @@ cursor: default;
 
 .A5TabRightPane {
 color: #000000;
-background: #f7f7f4 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAABCAIAAACnuZzqAAAAMElEQVR42mP8/v0LAz7ACKUYcUqhCDHilEIoYSRgFw4bGXEYR8A6HI7HogtJGXYNAG4tAvxUwzlYAAAAAElFTkSuQmCC') repeat-y right;
+background: #f7f7f4 url('images/$box/$size/100x1/$fill/Gradient_Vertical:%23247%2B247%2B244%3A%23255%2B255%2B255.png.a5image') repeat-y right;
 font: 9pt tahoma, arial;
 border: 1px solid #919b9c;
 padding: 2px;
@@ -383,7 +383,7 @@ padding: 2px 4px;
 margin-bottom: 1px;
 text-decoration: none;
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAIAAACUgoPjAAAAEklEQVR42mP8f8KGgYGBgYEBABDvAgWG6wFHAAAAAElFTkSuQmCC') repeat-y right;
+background: #fcfcfe url('images/$box/$size/3x1/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-y right;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #919b9c;
@@ -400,7 +400,7 @@ margin-left: -1px;
 margin-bottom: 1px;
 text-decoration: none;
 color: #000000;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -410,7 +410,7 @@ cursor: default;
 }
 .A5TabRightOff:hover {
 color: #000000;
-background: #fcfcfe url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAIAAAB7QOjdAAAAD0lEQVR42mP8f8KGgYEBAArgAgWJuthgAAAAAElFTkSuQmCC') repeat-y right;
+background: #fcfcfe url('images/$box/$size/2x1/$fill/Gradient_Horizontal:%23255%2B200%2B60%3A%23255%2B200%2B60.png.a5image') repeat-y right;
 border: 1px solid #919b9c;
 border-right-color: #e68b2c;
 border-left-color: #919b9c;
@@ -423,7 +423,7 @@ margin-left: -1px;
 margin-bottom: 1px;
 text-decoration: none;
 color: #888;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAUCAIAAADDbMD2AAAAHklEQVR42mP4//8/058//5j+/sWG/6PwUdX9x6YHAE6mO4r7R48jAAAAAElFTkSuQmCC') repeat-x top;
+background: #bebed8 url('images/$box/$size/1x20/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #91a7b4;
@@ -443,7 +443,7 @@ display: block;
 padding: 1px 4px;
 text-decoration: none;
 color: #000000;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAABCAIAAAB42ySwAAAAQ0lEQVR42mP8////////GRgYGBgYYDQDA8N/JDZEHFMNiiK4GchqsAri0EiUpWRrxOVaDI1EuhZTDTW9OXRdO8iTEABDvKtW3Yk1TQAAAABJRU5ErkJggg==') repeat-y left;
+background: #bebed8 url('images/$box/$size/250x1/$fill/Gradient_Vertical:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-y left;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #919b9c;
@@ -462,7 +462,7 @@ display: block;
 padding: 1px 4px;
 text-decoration: none;
 color: #888;
-background: #bebed8 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAABCAIAAAB42ySwAAAAQ0lEQVR42mP8////////GRgYGBgYYDQDA8N/JDZEHFMNiiK4GchqsAri0EiUpWRrxOVaDI1EuhZTDTW9OXRdO8iTEABDvKtW3Yk1TQAAAABJRU5ErkJggg==') repeat-y left;
+background: #bebed8 url('images/$box/$size/250x1/$fill/Gradient_Vertical:%23255%2B255%2B255%3A%23190%2B190%2B216.png.a5image') repeat-y left;
 font: 9pt tahoma, arial;
 font-weight: bold;
 border: 1px solid #919b9c;
@@ -473,7 +473,7 @@ margin-top: 3px;
 }
 .A5AccordionPane {
 color: #000000;
-background: #f7f7f4 url('data:/image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAIAAAASmSbdAAAAL0lEQVR42mP4//8/0////5kYGBiQMIT//z+mGEIcXQ9EDFUPNrNQ9RFvFrr9KGIAf24eRdVHB2UAAAAASUVORK5CYII=') repeat-x top;
+background: #f7f7f4 url('images/$box/$size/1x50/$fill/Gradient_Horizontal:%23255%2B255%2B255%3A%23247%2B247%2B244.png.a5image') repeat-x top;
 font: 9pt tahoma, arial;
 border: 1px solid #919b9c;
 padding: 2px;

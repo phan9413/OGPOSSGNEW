@@ -1,4 +1,4 @@
 function calcURL(urlIn)
-	{
-		return urlIn;
-	}
+{
+	return urlIn;
+}

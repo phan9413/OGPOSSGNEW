@@ -94,6 +94,7 @@ html { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -m
 
 
 
+
 <style>
 </style>
 
@@ -178,7 +179,7 @@ if(typeof DLG1_DlgObj == 'object') {
 	body: {
 		content: {
 			type: 'html',
-			src: '\n<div class="A5CWLayout" style="width: 100%" >\n\t<div id="DLG1.V.R1.STATICTEXT_1" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >This is a [Static Text] control in the [PANEL_APPLICATION] Panel Card.<br>\nYou should replace this control with an [Embedded Object] control to display the UX component\nfor your application.</br><br>\nWhen you embedded your UX component here, you will typically set the \'Delay render till visible\' property to true.</br></div>\n</div><br style="clear:both; " />\n\t\n\t<div class="A5CWLayout" style="width: 100%" >\n\t<button type="button" id="DLG1.V.R1.LOGOUT_TEST"    ></button>\n</div><br style="clear:both; " />\n\t\n<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
+			src: '\n<div class="A5CWLayout" style="width: 100%" >\n\t<div id="DLG1.V.R1.STATICTEXT_1" title=""  class="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >This is a [Static Text] control in the [PANEL_APPLICATION] Panel Card.<br>\nYou should replace this control with an [Embedded Object] control to display the UX component\nfor your application.</br><br>\nWhen you embedded your UX component here, you will typically set the \'Delay render till visible\' property to true.</br></div>\n</div><br style="clear:both; " />\n\t\n\t<div class="A5CWLayout">\n\t\t<div id="DLG1_DIVCONTAINER_d9a0216b_6b24_4075_8cac_6e6b0eeabd44"   ><img src="css/A5System/Images/wait.gif" /> Working...</div>\n\t</div><br  style="clear:both; " />\n\t\t\n\t<div class="A5CWLayout" style="width: 100%" >\n\t<button type="button" id="DLG1.V.R1.LOGOUT_TEST"    ></button>\n</div><br style="clear:both; " />\n\t\n<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
 		},
 		scroll: false
 	},
@@ -195,7 +196,28 @@ if(typeof DLG1_DlgObj == 'object') {
 	type: 'programmatic',
 	flow: 'ltr',
 	loopNavigate: false,
-	onPanelActivate: function() {DLG1_DlgObj.refreshClientSideComputations();},
+	onPanelActivate: function() {var panelName = this.state.activePanel;
+if(panelName == 'PANEL_APPLICATION') {
+	var runJS = true;
+	if(typeof this.state._render != 'undefined') {
+		var rs = this.state._render[panelName];
+		if(typeof rs !=  'undefined') {
+			if(rs == true) {
+				runJS = false;
+			}
+		}
+	}	
+	if(runJS) {
+		DLG1_DlgObj._functions.runAction_d9a0216b_6b24_4075_8cac_6e6b0eeabd44();;
+		if(typeof this.state._render == 'undefined') this.state._render = {};
+		this.state._render[panelName] = true;
+	}
+}
+DLG1_DlgObj.refreshClientSideComputations();},
+	onPanelActivateComplete: function() {if(this.state.activePanel == 'PANEL_APPLICATION') { 
+	var pChild = DLG1_DlgObj.getChildObject('<DEFAULTALIAS>','UX');
+	if(pChild) pChild._executeEvent('onPanelActivate');
+};},
 	onSize: function() {;if(typeof DLG1_DlgObj != 'undefined') {
 	if(typeof DLG1_DlgObj._findActiveLayoutRule != 'undefined') { 
 		DLG1_DlgObj._findActiveLayoutRule();
@@ -316,6 +338,34 @@ DLG1_DlgObj._findActiveLayoutRule();
 ;  };
 A5.__componentObj = DLG1_DlgObj;
 DLG1_DlgObj._tabObjects = [];
+DLG1_DlgObj._functions.runAction_d9a0216b_6b24_4075_8cac_6e6b0eeabd44 = function() {
+		var go = new Object();
+		go.dialog2Name = 'index';
+	go.type = 'dialog2';
+	go.alias = 'DLG1_INDEX_11438JIYY';
+	go.workingMessage = '<img src="css/A5System/Images/wait.gif" /> Working...';
+	go.flagTimer = 'F';
+	go.flagQueryEcho = 'F';
+	go.flagDebugMode = 'F';
+	go.userFilter = '';
+	go.baseFilter = '';
+	go.userOrder = '';
+	go.overrideSettings = 'style_name=`iOS`'+'||';
+	go.arguments = '';
+	go.localArguments = '';
+	go.linkDefinition = '';
+	go.placeHolderValues = '';
+	go.parameterBucket = $gvs('DLG1.PARAMETERBUCKET');
+	go.argumentValueBucket = $gvs('DLG1.ARGUMENTVALUES');
+	go.a5_default_path = 'C_colon_|AlphaCodes|OGPOSSGNEW|OGPOSSGNEW.WebProjects|Default.WebProject';
+	go.onLoadCompleteJavascript = '';
+	if(typeof DLG1_DlgObj.gridId != 'undefined') go._thisGridAlias = DLG1_DlgObj.gridId;
+	if(typeof DLG1_DlgObj.dialogId != 'undefined') go._thisGridAlias = DLG1_DlgObj.dialogId;
+	var panelCardId = DLG1_DlgObj.panelGetId('PANEL_APPLICATION','body');
+if($(panelCardId + '.SCROLLWRAPPER')) panelCardId = panelCardId + '.SCROLLWRAPPER';
+go.dialog2Div = panelCardId;
+	A5.component.runGenericComponent(go);
+}
 DLG1_DlgObj.fieldHelpers['USERNAME'] = new A5.Edit({
 	watermark: {
 		text: 'User Name'
@@ -358,7 +408,7 @@ DLG1_DlgObj.dialogWatches['SHOWHIDE_LOGOUT_BUTTON'] = {
 	}
 }
 DLG1_DlgObj.setStateInfo({
-	__dialogGuid: 'bcac189c-f753-420a-8656-be1cf2234344',
+	__dialogGuid: '2eb9f7bc-699d-49e2-9569-7aef1e7a95c1',
 	argumentsBoundToCotrols: '',
 	__sgr: '',
 	__dtfmt: 'MM/dd/yyyy',
@@ -487,6 +537,8 @@ DLG1_DlgObj._functions.calcOrientation = function() {
 	}
 	catch(err) {}
 DLG1_DlgObj._waitGif = 'css/A5System/Images/wait.gif';
+DLG1_DlgObj._embeddedUXComponents = {
+}
 DLG1_DlgObj._loginErrorPH = 'LOGIN_ERRORS';
 DLG1_DlgObj._layoutMode = 'containerwidth';
 DLG1_DlgObj._responsiveRulesMode = 'firsttrue';
@@ -513,6 +565,7 @@ $e.add('DLG1.V.R1.LOGOUT_BUTTON','abstractclick',function(e) {
 //If the user logged in from the Login Component, this event has no meaning.
 DLG1_DlgObj.logout();
 },this,false,'DLG1.V.R1.LOGOUT_BUTTON');
+
 
 
 

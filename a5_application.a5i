@@ -1,0 +1,171 @@
+<%A5
+'This part of the .A5I page is generated dynamically based on the Application Variables, 
+'Aliases and Connection Strings specified in the Profile that was selected when the Web project was published.
+
+'Note about Application Variables
+'Because the Application Variables are dimmed as Global, they can be seen inside all functions
+'in the code contained in an .A5W page
+
+
+'----------------------------------Application Variables ----------------------------------------------------------------------
+'No Application Variables have been defined
+
+'----------------------------------Aliases ----------------------------------------------------------------------
+
+Dim _aliases_ as c
+_aliases_ = <<%txt%
+[PathAlias.ADB_Path]|C:\AlphaCodes\OGPOSSGNEW
+%txt%
+
+'Creates a global collection called '_A5_Aliases' 
+'At run-time, your Xbasic scripts can lookup an alias as follows:
+'myAlias = _A5_Aliases.get("myAliasName")
+DIM global _A5_Aliases as U
+_A5_Aliases = makeAliasCollection(_aliases_)
+
+
+'----------------------------------------Named Storage Connection Strings -----------------------------------
+
+Dim _Storage_ConnectionStrings as c 
+_Storage_ConnectionStrings = <<%str%
+
+%str%
+
+'Load the storage connection strings into memory
+dim gv as p 
+gv = global_variables()
+loadConnectionStrings(gv, _Storage_ConnectionStrings, "Storage")
+
+'At run-time, your Xbasic scripts can lookup a storage connection string as follows:
+'myStorageConnectionString = a5_getNamedStorageConnection("myStorageConnectionStringName")
+
+
+'-----------------------------------AlphaDAO Connection Strings ----------------------------------------------------------
+'This is a CR-LF delimited list of AlphaDAO connection strings.
+'Connection strings are encrypted. If you want to edit a connection string shown here, you can enter
+'an unencrypted connection string by ommitting the 'Encrypted:' prefix.
+
+Dim _AlphaDAO_ConnectionStrings as c 
+_AlphaDAO_ConnectionStrings = <<%txt%
+OGPOSSGNEW|{A5API='SQLServer',A5DBVersion=2008,Server='(local)',A5ANSINullPadWarn=Default,UserName='sa',Password=':A5:B64:UGhhbjkoNCQxITMj',Database='OGPOSSGNEW'}
+%txt%
+
+'Create a global collection called '_A5_AlphaDAO_ConnectionStrings'
+'At run-time, your Xbasic scripts can lookup a connection string as follows:
+'myConnectionString = _A5_AlphaDAO_ConnectionStrings.get("myConnectionStringName")
+
+DIM global _A5_AlphaDAO_ConnectionStrings as U
+dim gv as p 
+gv = global_variables()
+_A5_AlphaDAO_ConnectionStrings = loadConnectionStrings(gv, _AlphaDAO_ConnectionStrings, "AlphaDAO")
+
+
+
+'-----------------------------------Web Project Properties ----------------------------------------------------------
+'This code loads Project Properties. At runtime, your Xbasic code can read Project Properties as follows:
+'dim projProp as p
+'projProp = a5_getWebProjectProperties()
+
+
+dim _webProjectProperties as c 
+_webProjectProperties = <<%txt%
+DIM aexFiles as P
+DIM aexFiles.fileNames as C
+DIM fileDownload as P
+DIM fileDownload.allowedFilenamePatterns as C = "*.xls*,*.pdf,*.jpg,*.jpeg,*.bmp,*.png,*.rtf"
+DIM fileDownload.allowedFolderPatterns as C
+DIM fileDownload.blockedFilenamePatterns as C
+DIM reportServer as P
+DIM reportServer.disable as L
+DIM projectStyle as C = "GrGray"
+DIM useMicrosoftXPSPrinterForPDF as L
+DIM convertXPSToPDF as L = .T.
+DIM PDFPrintTimeout as N
+DIM PDFPrintTimeoutMessage as C
+DIM HTMLReportOffload as L
+DIM jsLibraries as P
+DIM jsLibraries.jQueryCore as C = "Load Internal Version"
+DIM jsLibraries.jQueryUI as C = "Load Internal Version"
+DIM jsLibraries.links as C
+DIM jsLibraries.includeImageGallery as L
+DIM jsLibraries.includeGoogleJSAPI as L
+DIM jsLibraries.includeCKEdit as L
+DIM jsLibraries.jQueryCoreVersion as C = "1.6.2"
+DIM jsLibraries.jQueryUIVersion as C = "1.8.16"
+DIM jsLibraries.cordova as P
+DIM jsLibraries.cordova.loadFrom as C = "BuiltIn"
+DIM cssLibraries as P
+DIM cssLibraries.links as C
+DIM cssLibraries.jQuery as C = "No Theme"
+DIM NamedResources as C
+DIM email as P
+DIM email.smtp_server as C
+DIM email.smtp_username as C
+DIM email.smtp_password as C
+DIM email.smtp_port as C
+DIM email.smtp_SSLOption as C
+DIM email.from as C
+DIM email.from_alias as C
+DIM email.mandrillKey as C
+DIM email.outbox as P
+DIM email.outbox.tableType as C = "SQL"
+DIM email.outbox.connectionString as C
+DIM email.outbox.tableName as C
+DIM email.outbox.fieldmap as C
+DIM email.outbox.sequenceName as C
+DIM repository as P
+DIM repository.tableType as C = "SQL"
+DIM repository.connectionString as C
+DIM repository.tableName as C
+DIM repository.fieldmap as C
+DIM workQueue as P
+DIM workQueue.tableType as C = "SQL"
+DIM workQueue.connectionString as C
+DIM workQueue.tableName as C
+DIM workQueue.fieldmap as C
+DIM helpTable as P
+DIM helpTable.tableType as C = "SQL"
+DIM helpTable.connectionString as C
+DIM helpTable.tableName as C
+DIM helpTable.fieldmap as C
+DIM textDictionary as P
+DIM textDictionary.tableType as C = "SQL"
+DIM textDictionary.connectionString as C
+DIM textDictionary.tableName as C
+DIM textDictionary.fieldmap as C
+DIM datasynclogtable as P
+DIM datasynclogtable.tableType as C = "SQL"
+DIM datasynclogtable.connectionString as C
+DIM datasynclogtable.tableName as C
+DIM datasynclogtable.fieldmap as C
+DIM applicationGlobalVariables as C
+DIM calendar as P
+DIM calendar.license as C = "not licensed"
+DIM css as P
+DIM css.webkit as P
+DIM css.webkit.AllowSelectionOfText as L
+DIM stripe as P
+DIM stripe.keysJSON as C
+DIM siteDefaults as P
+DIM siteDefaults.guessedDefaultPage as L = .T.
+DIM siteDefaults.defaultpage as C = "index.a5w"
+DIM siteDefaults.sessionTimeout as N = 15
+%txt%
+
+dim gv as p 
+gv = global_variables()
+a5_loadWebProjectProperties(gv,_webProjectProperties)
+
+dim gv.__buildNumberExe__ as n 
+dim gv.__buildNumberAddins__ as n 
+dim gv.__guid as c 
+dim gv.__A5PublishVersion as n 
+gv.__A5PublishTimestamp = 2016444416114436719
+gv.__buildNumberExe__ = 2999
+gv.__buildNumberAddins__ = 4519
+gv.__guid = "59dbd168-5031-473e-accc-05d23b915453"
+gv.__control = <<%txtcontrol%
+hV7+2zUTjP0=
+%txtcontrol%
+
+%>
